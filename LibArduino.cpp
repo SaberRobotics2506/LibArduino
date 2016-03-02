@@ -38,6 +38,6 @@ void LibArduino::setColorsInRange(uint16_t min, uint16_t max, uint32_t c) {
   strip.show();
 }
 
-int LibArduino::color(uint32_t r, uint32_t g, uint32_t b) {
+uint32_t LibArduino::color(int r, int g, int b) {
 	return strip.Color(r, g, b);
 }
